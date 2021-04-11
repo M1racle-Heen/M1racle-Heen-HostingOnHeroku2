@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<!--Navbar-->
+	<div id="menu" class="menu">
+		<div id="menu-bar" onclick="onClickMenu()">
+			<div id="bar1" class="bar"> </div>
+			<div id="bar2" class="bar"> </div>
+			<div id="bar3" class="bar"> </div>
+			<ul id="nav" class="nav">
+				<li><a onclick="clickHome()">Home</a></li>
+				<li><a onclick="clickAbout()">About</a></li>
+				<li><a onclick="clickMenu()">Menu</a></li>
+				<li><a onclick="clickContact()">Contact</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	
+	<header class="header">
+        <div class="hero">
+            <h1 class="title">Food For Health</h1>
+            <a href="#" class="hero-button pulsate">Book a table</a>
+            <div class="user_profile">
+            	<p id ="user_name">Saidokmal</p>
+            </div>
+    </header>
+    <div class ="popup">  
+    	<div class="popup-content">
+    		<img class ="closed" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQREpNkaUqopqvFaEaPnEzWrqei9DMa5And2Q&usqp=CAU" width="7%" onclick="popout()">
+    		<h1 >Log in to continue</h1>
+    		<section id = "social-icons">
+    			<div class="icn">
+		   		<a href="#"><i class="fab fa-facebook facebook"></i></a>
+		       <a href="#"><i class="fab fa-google-plus plus"></i></a>
+		   		</div>
+		   </section>
+		   <hr class="empty"/>
+		   <h2>Or</h2>
+		   <hr class="empty"/>
+    		<input id = "username" type="text" name="username" placeholder="Your Email">
+    		<input id = "pass" type="password" name="pass" placeholder="Your password">
+    		<button onclick="login(username.value)">Log In</button>
+    	</div>
+    </div>
+    <!--About Us-->
+    <section id="about">
+       <div>
+       <h2 class="title-text">About Us</h2>
+    </div>
+    <div class="about-center">
+        
+        <article class="about">
+            <div class="about-icon"><i class="fas fa-mug-hot"></i></div>
+            <div class="about-text">
+                <h2 class="about-subtitle">Drinks</h2>
+                <p class="about-info">Tea drinkers will enjoy an assortment of wellness teas, including black, green, and herbal teas.</p>
+            </div>
+        </article>
+        
+        <article class="about">
+            <div class="about-icon"><i class="fas fa-utensils"></i></div>
+            <div class="about-text">
+                <h2 class="about-subtitle">Healthy Food</h2>
+                <p class="about-info">We use only the best ingredients to keep your food “clean”, by clean we mean house-made, no preservative we look for no GMO foods, buy organic ingredients when possible and prefer to use local sources.</p>
+            </div>
+        </article>
+        
+        <article class="about">
+            <div class="about-icon"><i class="fas fa-mortar-pestle"></i></div>
+            <div class="about-text">
+                <h2 class="about-subtitle">Organic Food</h2>
+                <p class="about-info">We aim to give our customers a healthy chemical-free meal for the perfect nutrition.
+</p>
+            </div>
+        </article>
+        
+        <article class="about">
+            <div class="about-icon"><i class="fas fa-drumstick-bite"></i></div>
+            <div class="about-text">
+                <h2 class="about-subtitle">White Meat</h2>
+                <p class="about-info">Our chicken and pork are of the highest quality and come from local suppliers.  All the beef is of foreign breeds which are grown in Malta by dedicated farmers for us to give to our clients.</p>
+            </div>
+        </article>
+        
+        <article class="about">
+            <div class="about-icon"><i class="fas fa-fish"></i></div>
+            <div class="about-text">
+                <h2 class="about-subtitle">Sea Food</h2>
+                <p class="about-info">Our serves only the freshest catches from waters near, far and everywhere in between. Seafood is our passion, freshness is our mission, and quality is our commitment.</p>
+            </div>
+        </article>
+        
+        <article class="about">
+            <div class="about-icon"><i class="fas fa-pepper-hot "></i></div>
+            <div class="about-text">
+                <h2 class="about-subtitle">Hot & Spicy</h2>
+                <p class="about-info">We seek to tantalize your taste buds and add passion to your meal. </p>
+            </div>
+        </article>
+        
+    </div>   
+   </section>
+
+   <!--Menu-->
+   <section class="menu" id="menu">
+       <article class="menu-image"></article>
+       <article class="menu-text">
+           <div class="menu-text-center">
+               <h1>Our Menu</h1>
+               <p>Browse through our vast range of products, order online and get it delivered right to your door.</p>
+                <a onclick="clickMen()">Explore</a>
+           </div>
+       </article>
+   </section>
+
+   <!--Icons-->
+   <section id = "social-icons">
+   		<a href="#"><i class="fab fa-facebook facebook"></i></a>
+       <a href="#"><i class="fab fa-twitter twitter"></i></a>
+       <a href="#"><i class="fab fa-instagram instagram"></i></a>
+       <a href="#"><i class="fab fa-google-plus plus"></i></a>
+   </section>
+
+   <!--Numbers-->
+   <section id="numbers">
+       <article class="number">
+           <i class="fas fa-cloud-meatball"></i>
+           <p>50</p>
+          <h3> Meat dishes</h3>
+        </article>
+        <article class="number">
+            <i class="fas fa-cheese"></i>
+            <p>35</p>
+           <h3> Cheese Variations</h3>
+         </article>
+         <article class="number">
+            <i class="fas fa-pizza-slice"></i>
+            <p>25</p>
+           <h3> Pizzas</h3>
+         </article>
+         <article class="number">
+            <i class="fas fa-ice-cream"></i>
+            <p>40</p>
+           <h3> Desserts</h3>
+         </article>
+   </section>
+   <section id="food">
+       <div>
+       <h2 class="title-text"> Food Fusion</h2>
+        </div>
+      <div class="food-container">
+              <!--======Card Start ----============-->
+      <article class="food-card">
+              <img src="photo8.jpg" class="food-img"alt="">
+              <div class="img-text">
+                  <h1>Breakfast</h1>
+              </div>
+              <div class="img-footer">
+                  <div class="footer-icon">
+                    <i class="fas fa-dollar-sign">25</i>
+                  </div>
+                  <div class="footer-btn">
+                    <button type="button"class="food-btn">Order Now</button>  
+                  </div>
+              </div>
+              </article>
+              <article class="food-card">
+                <img src="photo7.jpg" class="food-img"alt="">
+                <div class="img-text">
+                    <h1>Lunch</h1>
+                </div>
+                <div class="img-footer">
+                    <div class="footer-icon">
+                      <i class="fas fa-dollar-sign">35</i>
+                    </div>
+                    <div class="footer-btn">
+                      <button type="button"class="food-btn">Order Now</button>  
+                    </div>
+                </div>
+                </article>
+                <article class="food-card">
+                    <img src="photo5.jpg" class="food-img"alt="">
+                    <div class="img-text">
+                        <h1>Dinner</h1>
+                    </div>
+                    <div class="img-footer">
+                        <div class="footer-icon">
+                          <i class="fas fa-dollar-sign">45</i>
+                        </div>
+                        <div class="footer-btn">
+                          <button type="button"class="food-btn">Order Now</button>  
+                        </div>
+                    </div>
+                    </article>
+                    <article class="food-card">
+              <img src="photo9.jpg" class="food-img"alt="">
+              <div class="img-text">
+                  <h1>Breakfast</h1>
+              </div>
+              <div class="img-footer">
+                  <div class="footer-icon">
+                    <i class="fas fa-dollar-sign">25</i>
+                  </div>
+                  <div class="footer-btn">
+                    <button type="button"class="food-btn">Order Now</button>  
+                  </div>
+              </div>
+              </article>
+              <article class="food-card">
+                <img src="photo6.jpg" class="food-img"alt="">
+                <div class="img-text">
+                    <h1>Lunch</h1>
+                </div>
+                <div class="img-footer">
+                    <div class="footer-icon">
+                      <i class="fas fa-dollar-sign">35</i>
+                    </div>
+                    <div class="footer-btn">
+                      <button type="button"class="food-btn">Order Now</button>  
+                    </div>
+                </div>
+                </article>
+                    <article class="food-card">
+                    <img src="photo10.jpg" class="food-img"alt="">
+                    <div class="img-text">
+                        <h1>Dinner</h1>
+                    </div>
+                    <div class="img-footer">
+                        <div class="footer-icon">
+                          <i class="fas fa-dollar-sign">45</i>
+                        </div>
+                        <div class="footer-btn">
+                          <button type="button"class="food-btn">Order Now</button>  
+                        </div>
+                    </div>
+                    </article>
+       </div>
+   </section>
+
+   <section id="gallery">
+   	<div>
+   		<h2 class="title-text">Main Cuisines</h2>
+   	</div>
+   	<div id="gallery-center">
+   		<article class="gallery-item">
+	   		<a href="new1.jpg">
+	   			<img src="new1.jpg" alt="">
+	   		</a>
+   		</article>
+   		<article class="gallery-item">
+	   		<a href="new2.jpg">
+	   			<img src="new2.jpg" alt="">
+	   		</a>
+   		</article>
+   		<article class="gallery-item">
+	   		<a href="new3.jpg">
+	   			<img src="new3.jpg" alt="">
+	   		</a>
+   		</article>
+   		<article class="gallery-item">
+	   		<a href="new4.jpg">
+	   			<img src="new4.jpg" alt="">
+	   		</a>
+   		</article>
+   		<article class="gallery-item">
+	   		<a href="new5.jpg">
+	   			<img src="new5.jpg" alt="">
+	   		</a>
+   		</article>
+   		<article class="gallery-item">
+	   		<a href="new6.jpg">
+	   			<img src="new6.jpg" alt="">
+	   		</a>
+   		</article>
+   		<article class="gallery-item">
+	   		<a href="new7.jpg">
+	   			<img src="new7.jpg" alt="">
+	   		</a>
+   		</article>
+   		<article class="gallery-item">
+	   		<a href="new8.jpg">
+	   			<img src="new8.jpg" alt="">
+	   		</a>
+   		</article>
+   	</div>
+   </section>
+
+   <footer class="footer">
+
+        <div class="section-center">
+        	<p id = "btn_white" class="tet" onclick="popup()">Log In</p>
+            <p class="text">
+                &copy; <span>Food For Health</span> 
+            </p>
+        </div>
+
+       </footer>
+
+
+   
+   <script src="onClickMenu.js"></script>
+</body>
+</html> 
