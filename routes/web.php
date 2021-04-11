@@ -17,7 +17,7 @@ use App\Http\Controllers\MailController;
 */
 
 Route::get('/', function () {
-    return view('Main');
+    return view('Master');
 });
 
 Route::get('locale/{locale}','App\Http\Controllers\MainController@changeLocale'
