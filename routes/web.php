@@ -16,7 +16,7 @@ use App\Http\Controllers\MailController;
 |
 */
 
-Route::get('/example', function () {
+Route::get('/', function () {
     return view('Main');
 });
 
