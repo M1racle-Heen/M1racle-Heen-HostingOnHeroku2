@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Schema;
+use Session;
 
 class MainController extends Controller
 {
