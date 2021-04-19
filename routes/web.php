@@ -17,17 +17,14 @@ use App\Http\Controllers\MainController;
 */
 
 Route::get('/', function () {
-    return view('Master');
+    return redirect()->route('en');
 });
-
-Route::group(['middleware' => ['language']],function(){
-	Route::get('/language/{locale}',[
-		'uses'=>'App\Http\Controllers\MainController@changeLocale',
-		'as' =>'language.changer',
-		'role' =>['company', 'user']
-	]);
-});
-
+Route::get('locale/{locale}','App\Http\Controllers\MainController@changeLocale'
+)->name('locale');
+Route::get('locale/{locale}',[
+	'uses' =>'App\Http\Controllers\MainController@changeLocale',
+	'as' => 'myControllerIndex'
+]);
 
 Route::get('lang/{lang}', function($lang){
 	App::setlocale($lang);
