@@ -23,15 +23,14 @@ Route::get('/', function () {
 //Route::get('locale/{locale}','App\Http\Controllers\MainController@changeLocale'
 //)->name('locale');
 
-Route::get('locale/{locale?}', [
+Route::get('locale/{locale}', [
    'uses' => 'App\Http\Controllers\MainController@changeLocale',
    'as' => 'Index'
-
-]
-	return view('Master'););
+]);
 Route::get('lang/{lang}', function($lang){
 	App::setlocale($lang);
 	return view('Master');
+	
 });
 
 
