@@ -32,7 +32,7 @@
 	<header class="header">
         <div class="hero">
             <h1 class="title">@lang('main.food_for_health')</h1>
-            <a href="#" class="hero-button pulsate">@lang('main.book_a_table')</a>
+             <button type="button" onclick="" class="hero-button pulsate">@lang('main.book_a_table')</button>
             <div class="user_profile">
             	<p id ="user_name"></p>
             </div>
@@ -54,9 +54,12 @@
 
     		<input id = "pass" type="password" name="pass" placeholder="Your password">
     		<button onclick="login(username.value)">@lang('main.log_in')</button>
-        <button type="button" onclick="window.location='{{ route('pSend',array("190109003@stu.sdu.edu.kz")) }}'">Button</button>
+        <button type="button" onclick="window.location='{{ route('pSend',array("190109003@stu.sdu.edu.kz")) }}'">Send Mail</button>
     	</div>
     </div>
+    <div class="kek">  
+      HELLO WORLD
+      </div>
     <!--About Us-->
     <section id="about">
        <div>

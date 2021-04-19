@@ -17,7 +17,6 @@ function clickContact () {
 function clickMen () {
             window.scroll (0, 5000);
 }
-
 function popup(){
 	window.scroll (0, 0);
 	var btn = document.getElementById("btn_white").innerHTML;
@@ -28,9 +27,7 @@ function popup(){
 		document.body.style.overflow = "hidden";
 	}else{
 		logout();
-	}
-
-	
+	}	
 }
 function popout(){
 	window.scroll (0, 0);
