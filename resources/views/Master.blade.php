@@ -20,6 +20,13 @@
 			<div id="bar2" class="bar"> </div>
 			<div id="bar3" class="bar"> </div>
 			<ul id="nav" class="nav">
+        <li class="is-relative hidden-lg hidden-md">
+        <a href="/logout">
+          <i class="fa fa-power-off"></i> 
+          {{ trans('lang.logout') }}
+        <span class="sr-only">(current)</span>
+        </a>
+        </li>
         <li><a href = "">@lang('main.lang')</a></li>
 				<li><a onclick="clickHome()">@lang('main.hme')</a></li>
 				<li><a onclick="clickAbout()">@lang('main.about')</a></li>
