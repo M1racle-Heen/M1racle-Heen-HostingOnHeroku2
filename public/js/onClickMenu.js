@@ -19,14 +19,14 @@ function clickMen () {
 }
 function popup1(){
 	window.scroll (0, 0);
-	var btn = document.getElementById("btn_white").innerHTML;
+	var btn = document.getElementById("btn_white1").innerHTML;
 	
-	if(btn == "Log In" || btn == "Авторизоваться"){
-		document.querySelector(".popup").style.display = "flex";
-		$(".popup").animate({opacity: "1"},"slow");
+	if(btn == "Book a table" || btn == "Заказать стол"){
+		document.querySelector(".popup1").style.display = "flex";
+		$(".popup1").animate({opacity: "1"},"slow");
 		document.body.style.overflow = "hidden";
 	}else{
-		logout();
+		logout1();
 	}	
 }
 function popup(){
@@ -64,6 +64,10 @@ function login(name){
 	popout();
 	}
 }
+function logout1(){
+	document.querySelector(".user_profile").style.display = "none";
+}
+
 
 function logout(){
 	document.querySelector(".user_profile").style.display = "none";
