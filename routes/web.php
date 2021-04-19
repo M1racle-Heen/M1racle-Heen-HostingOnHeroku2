@@ -17,20 +17,16 @@ use App\Http\Controllers\MainController;
 */
 
 Route::get('/', function () {
-    return redirect()->route('en');
+	App::setlocale('en');
+    return view('Master');
 });
 
-//Route::get('locale/{locale}','App\Http\Controllers\MainController@changeLocale'
-//)->name('locale');
+Route::get('locale/{locale}','App\Http\Controllers\MainController@changeLocale'
+)->name('locale');
 
-Route::get('locale/{locale}', [
-   'uses' => 'App\Http\Controllers\MainController@changeLocale',
-   'as' => 'Index'
-]);
 Route::get('lang/{lang}', function($lang){
 	App::setlocale($lang);
 	return view('Master');
-
 });
 
 
