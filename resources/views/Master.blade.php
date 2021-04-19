@@ -59,21 +59,7 @@
     </div>
     <div class ="popup1">  
       <div class="popup1-content">
-        <img class ="closed" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQREpNkaUqopqvFaEaPnEzWrqei9DMa5And2Q&usqp=CAU" width="7%" onclick="popout()">
-        <h1 >@lang('main.Log_in_to_continue')</h1>
-        <section id = "social-icons">
-          <div class="icn">
-          <a href="#"><i class="fab fa-facebook facebook"></i></a>
-           <a href="#"><i class="fab fa-google-plus plus"></i></a>
-          </div>
-       </section>
-       <hr class="empty"/>
-       <h2>@lang('main.or')</h2>
-       <hr class="empty"/>
-        <input id = "username" type="text" name="username" placeholder="Your Email">
-
-        <input id = "pass" type="password" name="pass" placeholder="Your password">
-        <button onclick="login(username.value)">@lang('main.log_in')</button>
+        
         <button type="button" onclick="window.location='{{ route('pSend',array("190109003@stu.sdu.edu.kz")) }}'">Send Mail</button>
       </div>
     </div>
