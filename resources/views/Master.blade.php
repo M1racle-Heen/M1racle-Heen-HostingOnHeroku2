@@ -32,7 +32,7 @@
 	<header class="header">
         <div class="hero">
             <h1 class="title">@lang('main.food_for_health')</h1>
-             <button type="button" onclick="popup1()" class="hero-button pulsate">@lang('main.book_a_table')</button>
+             <button type="button" onclick="popup()" class="hero-button pulsate">@lang('main.book_a_table')</button>
             <div class="user_profile">
             	<p id ="user_name"></p>
             </div>
