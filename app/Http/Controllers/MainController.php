@@ -10,7 +10,7 @@ class MainController extends Controller
     public function changeLocale($locale){
     	\App::setlocale($locale);
     	session()->put('locale',$locale);
-    	return redirect()->route('en');
+    	return redirect()->route('en/');
 
     }
 }
