@@ -54,12 +54,11 @@
 
     		<input id = "pass" type="password" name="pass" placeholder="Your password">
     		<button onclick="login(username.value)">@lang('main.log_in')</button>
-        
     	</div>
     </div>
     <div class ="popup1">  
       <div class="popup1-content">
-        hello
+      
         <button type="button" onclick="window.location='{{ route('pSend',array("190109003@stu.sdu.edu.kz")) }}'">Send Mail</button>
       </div>
     </div>
