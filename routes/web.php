@@ -17,7 +17,7 @@ use App\Http\Controllers\MainController;
 */
 
 Route::get('/', function () {
-    return redirect()->route('Index', ['locale' => 'en']);
+    return redirect()->route('en');
 });
 
 //Route::get('locale/{locale}','App\Http\Controllers\MainController@changeLocale'
@@ -30,7 +30,7 @@ Route::get('locale/{locale}', [
 Route::get('lang/{lang}', function($lang){
 	App::setlocale($lang);
 	return view('Master');
-	
+
 });
 
 
