@@ -16,6 +16,9 @@ use App\Http\Controllers\MainController;
 |
 */
 
+Route::get('/', function () {
+    return redirect()->route('en');
+});
 
 Route::get('locale/{locale}','App\Http\Controllers\MainController@changeLocale'
 )->name('locale');
