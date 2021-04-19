@@ -27,14 +27,7 @@ Route::get('lang/{lang}', function($lang){
 	App::setlocale($lang);
 	return view('Master');
 });
-Route::get('en/', function(){
-	App::setlocale('en');
-	return view('Master');
-});
 
-Route::get('ru/', function(){
-	App::setlocale('ru');
-	return view('Master');
-});
 
 Route::get('/mail/{id}/send','App\Http\Controllers\MailController@send')->name('pSend');
+Route::get('/mail/{id}/sends',['as' =>'send.edit','uses' =>'App\Http\Controllers\MailController@send']);
