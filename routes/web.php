@@ -17,6 +17,7 @@ use App\Http\Controllers\MainController;
 */
 
 Route::get('/', function () {
+	App::setlocale('en');
     return view('Master');
 });
 
