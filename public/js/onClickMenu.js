@@ -17,6 +17,18 @@ function clickContact () {
 function clickMen () {
             window.scroll (0, 5000);
 }
+function popup1(){
+	window.scroll (0, 0);
+	var btn = document.getElementById("btn_white").innerHTML;
+	
+	if(btn == "Log In" || btn == "Авторизоваться"){
+		document.querySelector(".popup").style.display = "flex";
+		$(".popup").animate({opacity: "1"},"slow");
+		document.body.style.overflow = "hidden";
+	}else{
+		logout();
+	}	
+}
 function popup(){
 	window.scroll (0, 0);
 	var btn = document.getElementById("btn_white").innerHTML;
