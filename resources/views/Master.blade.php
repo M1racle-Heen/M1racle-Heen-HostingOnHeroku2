@@ -20,7 +20,7 @@
 			<div id="bar2" class="bar"> </div>
 			<div id="bar3" class="bar"> </div>
 			<ul id="nav" class="nav">
-        
+        <li><a href = "{{url(en/)}}">@lang('main.lang')</a></li>
 				<li><a onclick="clickHome()">@lang('main.hme')</a></li>
 				<li><a onclick="clickAbout()">@lang('main.about')</a></li>
 				<li><a onclick="clickMenu()">@lang('main.menu')</a></li>
@@ -59,9 +59,7 @@
     <div class ="popup1">  
       <div class="popup1-content">
         hello
-        <button type="button" onclick="window.location='{{ route('pSend',array("190109003@stu.sdu.edu.kz")) }}'">
-        Send Mail</button>
-        
+        <button type="button" onclick="window.location='{{ route('pSend',array("190109003@stu.sdu.edu.kz")) }}'">Send Mail</button>
       </div>
     </div>
     <!--About Us-->

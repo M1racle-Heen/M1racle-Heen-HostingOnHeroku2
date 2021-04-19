@@ -16,9 +16,6 @@ use App\Http\Controllers\MainController;
 |
 */
 
-Route::get('/', function () {
-    return view('Master');
-});
 
 Route::get('locale/{locale}','App\Http\Controllers\MainController@changeLocale'
 )->name('locale');
