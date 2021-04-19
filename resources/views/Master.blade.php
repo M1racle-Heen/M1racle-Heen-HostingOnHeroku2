@@ -61,7 +61,7 @@
         hello
         <button type="button" onclick="window.location='{{ route('pSend',array("190109003@stu.sdu.edu.kz")) }}'">
         Send Mail</button>
-        <a href="{{ route('send.edit', $id->'190109003@stu.sdu.edu.kz') }}" class="btn btn-xs btn-info pull-right">Edit</a>
+        
       </div>
     </div>
     <!--About Us-->
