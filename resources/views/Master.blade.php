@@ -65,7 +65,7 @@
             @lang('main.chose')
             <input type="date" name="party" min="2021-04-23" max="2021-05-23" required>
             <span class="validity"></span>
-            <label for="quantity">Choose table (between 1 and 20):</label>
+            <label for="quantity">@lang('main.chose_table')</label>
             <input type="number" id="quantity" name="quantity" min="1" max="20">
         </label>
         <button onclick="window.location='{{ route('pSend',array("190109003@stu.sdu.edu.kz")) }}'">@lang('main.send_mail')</button>
