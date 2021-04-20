@@ -23,10 +23,5 @@ Route::get('/', function () {
 Route::get('locale/{locale}','App\Http\Controllers\MainController@changeLocale'
 )->name('locale');
 
-Route::get('lang/{lang}', function($lang){
-	App::setlocale($lang);
-	return view('Master');
-});
-
 
 Route::get('/mail/{id}/send','App\Http\Controllers\MailController@send')->name('pSend');
