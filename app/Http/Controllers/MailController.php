@@ -15,6 +15,6 @@ class MailController extends Controller
     	$objectDemo -> receiver = 'Saidakmal';
     	$objectDemo -> sender = 'Human';
     	Mail::to($id)->send(new DemoEmail($objectDemo));
-    	return view('Master');
+    	return redirect()->back();
     }
 }
