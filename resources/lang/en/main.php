@@ -1,5 +1,7 @@
 <?php
 return[
+	'upload_file' => 'Upload your coupon',
+	'upload' => 'Upload',
 	'chose_table2' => 'Choose an appointment time:',
 	'chose_table' => 'Select a table (from 1 to 20):',
 	'send_mail' => 'Accept',
