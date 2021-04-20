@@ -59,6 +59,11 @@
     <div class ="popup1">  
       <div class="popup1-content">
         <img class ="closed" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQREpNkaUqopqvFaEaPnEzWrqei9DMa5And2Q&usqp=CAU" width="7%" onclick="popout1()">
+        <label>
+            Choose your preferred party date (required, April 1st to 20th):
+            <input type="date" name="party" min="2017-04-01" max="2017-04-20" required>
+            <span class="validity"></span>
+        </label>
         <button type="button" onclick="window.location='{{ route('pSend',array("190109003@stu.sdu.edu.kz")) }}'">Send Mail</button>
       </div>
     </div>
