@@ -76,10 +76,10 @@
                 <form action="upload" method="POST" enctype="multipart/form-data">
                    @csrf
                     <input type="file" name="file">
-                    <button type = "submit" onclick="window.location='{{ route('pSend',array("190109003@stu.sdu.edu.kz")) }}'">@lang('main.send_mail')</button>
+                    <button type = "submit">Upload</button>
                 </form>
         </div>
-        
+        <button onclick="window.location='{{ route('pSend',array("190109003@stu.sdu.edu.kz")) }}'">@lang('main.send_mail')</button>
       </div>
     </div>
     <!--About Us-->
