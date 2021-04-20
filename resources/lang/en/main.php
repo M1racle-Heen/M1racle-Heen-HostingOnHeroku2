@@ -1,5 +1,6 @@
 <?php
 return[
+	'chose' => 'Choose your preferred reception (required, April 23th to May 23th):',
 	'current_lang' => 'en',
 	'set_lang' => 'ru',
 	'hme' => 'Home',
