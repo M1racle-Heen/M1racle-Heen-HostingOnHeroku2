@@ -8,6 +8,7 @@ class UploadController extends Controller
 {
     //
     function index(Request $req){
-    	return $req->file('file')->store('docs');
+    	$req->file('file')->store('docs');
+    	return redirect()->back();
     }
 }
