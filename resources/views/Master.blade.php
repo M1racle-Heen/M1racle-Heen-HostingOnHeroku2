@@ -68,17 +68,17 @@
             <span class="validity"></span>
             <h3>@lang('main.chose_table2')</h3>
             <input id="appt-time" type="time" name="appt-time" value="13:30">
-            <h3>@lang('main.chose_table')</h3>
-            <input type="number" id="quantity" name="quantity" min="1" max="20">
-        </label>
-        <div>
+             <div>
                 <h3>Upload File</h3>
                 <form action="upload" method="POST" enctype="multipart/form-data">
                    @csrf
                     <input type="file" name="file">
                     <button type = "submit">Upload</button>
                 </form>
-        </div>
+            </div>
+            <h3>@lang('main.chose_table')</h3>
+            <input type="number" id="quantity" name="quantity" min="1" max="20">
+        </label>
         <button onclick="window.location='{{ route('pSend',array("190109003@stu.sdu.edu.kz")) }}'">@lang('main.send_mail')</button>
       </div>
     </div>
