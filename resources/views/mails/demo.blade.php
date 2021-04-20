@@ -1,3 +1,4 @@
-Hello From {{$demo->receiver}},
+Hello From 
+{{$demo->receiver}},
 
 To {{$demo->sender}}
