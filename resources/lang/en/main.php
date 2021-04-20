@@ -1,6 +1,7 @@
 <?php
 return[
-	'lang' => 'Change Language',
+	'current_lang' => 'en',
+	'set_lang' => 'ru',
 	'hme' => 'Home',
 	'about' => 'About',
 	'menu' => 'Menu',

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\App;
 
 
 class MainController extends Controller
@@ -11,8 +11,8 @@ class MainController extends Controller
     	//\App::setlocale($locale);
     	//session()->put('locale',$locale);
     	//return redirect()->back();
-    	\App::setLocale($locale)
-    	$currentLocale = \App::getLocale();
-    	dd($currentLocale);
+    	session(['locale'=>$locale]);
+    	App::setLocale($locale);
+    	return redirect()->back();
     }
 }

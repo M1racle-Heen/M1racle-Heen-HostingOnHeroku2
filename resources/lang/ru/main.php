@@ -1,9 +1,10 @@
 <?php
 return[
-	'lang' => 'Поменять язык',
+	'current_lang' => 'ru',
+	'set_lang' => 'en',
 	'hme' => 'Главная',
-	'about' => 'Oнас',
-	'menu' => 'менью',
+	'about' => 'O нас',
+	'menu' => 'Меню',
 	'contact' => 'контакты',
 	'food_for_health' => 'Еда для здоровья',
 	'book_a_table' => 'Заказать стол',
