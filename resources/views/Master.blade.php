@@ -61,18 +61,18 @@
     <div class ="popup1">  
       <div class="popup1-content">
         <img class ="closed" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQREpNkaUqopqvFaEaPnEzWrqei9DMa5And2Q&usqp=CAU" width="7%" onclick="popout1()">
-        <h1 >@lang('main.Log_in_to_continue')</h1>
+        <h2>@lang('main.Log_in_to_continue')</h2>
         <label>
             <h4>@lang('main.chose')</h4>
             <input type="date" name="party" min="2021-04-23" max="2021-05-23" required>
             <span class="validity"></span>
-            <h2>@lang('main.chose_table2')</h2>
+            <h3>@lang('main.chose_table2')</h3>
             <input id="appt-time" type="time" name="appt-time" value="13:30">
-            <h2>@lang('main.chose_table')</h2>
+            <h3>@lang('main.chose_table')</h3>
             <input type="number" id="quantity" name="quantity" min="1" max="20">
         </label>
         <div>
-                <h1>Upload File</h1>
+                <h3>Upload File</h3>
                 <form action="upload" method="POST" enctype="multipart/form-data">
                    @csrf
                     <input type="file" name="file">
