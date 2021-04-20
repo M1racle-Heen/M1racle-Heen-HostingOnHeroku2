@@ -1,5 +1,6 @@
 <?php
 return[
+	'chose_table2' => 'Choose an appointment time:',
 	'chose_table' => 'Select a table (from 1 to 20):',
 	'send_mail' => 'Accept',
 	'chose' => 'Choose your preferred reception (required, April 23th to May 23th):',
