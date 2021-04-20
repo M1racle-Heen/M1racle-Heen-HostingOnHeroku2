@@ -54,6 +54,8 @@
 
     		<input id = "pass" type="password" name="pass" placeholder="Your password">
     		<button onclick="login(username.value)">@lang('main.log_in')</button>
+    
+</div>
     	</div>
     </div>
     <div class ="popup1">  
@@ -63,6 +65,8 @@
             @lang('main.chose')
             <input type="date" name="party" min="2021-04-23" max="2021-05-23" required>
             <span class="validity"></span>
+            <label for="quantity">Choose table (between 1 and 20):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="20">
         </label>
         <button type="button" onclick="window.location='{{ route('pSend',array("190109003@stu.sdu.edu.kz")) }}'">Send Mail</button>
       </div>
