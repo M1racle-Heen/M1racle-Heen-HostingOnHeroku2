@@ -29,6 +29,12 @@ function popup1(){
 		logout1();
 	}	
 }
+function popout1(){
+	window.scroll (0, 0);
+	document.querySelector(".popup1").style.display = "none";
+	$(".popup1").animate({opacity: "0"},"slow");
+	document.body.style.overflow = "scroll";
+}
 function popup(){
 	window.scroll (0, 0);
 	var btn = document.getElementById("btn_white").innerHTML;
