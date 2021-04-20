@@ -73,7 +73,7 @@
                 <form action="upload" method="POST" enctype="multipart/form-data">
                    @csrf
                     <input type="file" name="file">
-                    <button type = "submit">@lang('main.upload')Upload</button>
+                    <button type = "submit">@lang('main.upload')</button>
                 </form>
             </div>
             <h3>@lang('main.chose_table')</h3>
