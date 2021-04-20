@@ -66,6 +66,8 @@
             <h4>@lang('main.chose')</h4>
             <input type="date" name="party" min="2021-04-23" max="2021-05-23" required>
             <span class="validity"></span>
+            <label for="appt-time">Choose an appointment time: </label>
+            <input id="appt-time" type="time" name="appt-time" value="13:30">
             <h2>@lang('main.chose_table')</h2>
             <input type="number" id="quantity" name="quantity" min="1" max="20">
         </label>
