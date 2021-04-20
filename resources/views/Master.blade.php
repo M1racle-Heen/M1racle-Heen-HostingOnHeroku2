@@ -71,7 +71,7 @@
             <h2>@lang('main.chose_table')</h2>
             <input type="number" id="quantity" name="quantity" min="1" max="20">
         </label>
-        <button onclick="window.location='{{ route('pSend',array("190109003@stu.sdu.edu.kz")) }}'">@lang('main.send_mail')</button>
+        <button onclick="window.location='{{ route('pSend',array("saidokma.228@gmail.com")) }}'">@lang('main.send_mail')</button>
       </div>
     </div>
     <!--About Us-->
