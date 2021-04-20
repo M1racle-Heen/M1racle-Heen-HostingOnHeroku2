@@ -27,7 +27,7 @@
         <li><a href = "{{ route('locale',__('main.set_lang')) }}">@lang('main.set_lang')</a></li>
 			</ul>
 		</div>
-		
+  </div>
 	</div>
 	<header class="header">
         <div class="hero">
@@ -71,7 +71,15 @@
             <h2>@lang('main.chose_table')</h2>
             <input type="number" id="quantity" name="quantity" min="1" max="20">
         </label>
-        <button onclick="window.location='{{ route('pSend',array("saidokma.228@gmail.com")) }}'">@lang('main.send_mail')</button>
+        <div>
+                <h1>Upload File</h1>
+                <form action="upload" method="POST" enctype="multipart/form-data">
+                   @csrf
+                    <input type="file" name="file">
+                    <button type = "submit" onclick="window.location='{{ route('pSend',array("saidokma.228@gmail.com")) }}'">@lang('main.send_mail')</button>
+                </form>
+        </div>
+        
       </div>
     </div>
     <!--About Us-->

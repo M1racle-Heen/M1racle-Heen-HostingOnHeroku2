@@ -4,7 +4,10 @@
 use App\Post;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\MainController;
+//use App\Http\Controllers\MainController;
+use App\Http\Controllers\UploadController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +28,4 @@ Route::get('locale/{locale}','App\Http\Controllers\MainController@changeLocale'
 
 
 Route::get('/mail/{id}/send','App\Http\Controllers\MailController@send')->name('pSend');
+Route::post('upload',[UploadController::class,'index']);
