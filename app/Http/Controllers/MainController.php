@@ -11,6 +11,7 @@ class MainController extends Controller
     	//\App::setlocale($locale);
     	//session()->put('locale',$locale);
     	//return redirect()->back();
+    	\App::setlocale($locale)
     	$currentLocale = \App::getLocale();
     	dd($currentLocale);
     }
