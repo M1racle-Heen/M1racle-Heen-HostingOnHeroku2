@@ -1,3 +1,7 @@
+const header = document.querySelector(".header");
+
+const t1 = new TimelineMax();
+t1.fromTo(header,1,{height:"0%"},{height:"100%"});
 function onClickMenu() {
 	document.getElementById('menu-bar').classList.toggle('change');
 	document.getElementById('nav').classList.toggle('change-btn');
