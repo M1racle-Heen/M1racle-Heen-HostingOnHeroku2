@@ -355,7 +355,7 @@
 
   <script type="text/javascript">
      var ctx = document.getElementById("myChart");
-
+     ctx.height = 500;
      var myChart = new Chart(ctx,{
         type: 'pie',
           data:{
@@ -385,7 +385,7 @@
    </script>
    <script type="text/javascript">
      var ctx = document.getElementById("myChart2");
-
+     ctx.height = 500;
      var myChart = new Chart(ctx,{
         "type": 'line',
           "data":{
@@ -400,6 +400,7 @@
 
    <script type="text/javascript">
      var ctx = document.getElementById("myChart1");
+     ctx.height = 500;
      var myChart = new Chart(ctx,{
         type: 'bar',
           data:{
