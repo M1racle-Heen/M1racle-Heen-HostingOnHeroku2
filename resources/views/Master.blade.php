@@ -68,14 +68,6 @@
             <span class="validity"></span>
             <h3>@lang('main.chose_table2')</h3>
             <input id="appt-time" type="time" name="appt-time" value="13:30">
-             <div>
-                <h3>@lang('main.upload_file')</h3>
-                <form action="upload" method="POST" enctype="multipart/form-data">
-                   @csrf
-                    <input type="file" name="file">
-                    <button type = "submit">@lang('main.upload')</button>
-                </form>
-            </div>
             <h3>@lang('main.chose_table')</h3>
             <input type="number" id="quantity" name="quantity" min="1" max="20">
         </label>
