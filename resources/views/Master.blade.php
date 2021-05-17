@@ -24,7 +24,7 @@
 				<li><a onclick="clickAbout()">@lang('main.about')</a></li>
 				<li><a onclick="clickMenu()">@lang('main.menu')</a></li>
 				<li><a onclick="clickContact()">@lang('main.contact')</a></li>
-        <li><a href = "{{ route('locale',__('main.set_lang')) }}">@lang('main.set_lang')</a></li>
+                <li><a href = "{{ route('locale',__('main.set_lang')) }}">@lang('main.set_lang')</a></li>
 			</ul>
 		</div>
   </div>
