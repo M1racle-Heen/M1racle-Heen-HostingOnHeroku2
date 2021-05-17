@@ -267,7 +267,7 @@
                     </article>
        </div>
    </section>
-
+   <!--
     <section id="t1">
       <div>
         <h2 class="title-text">@lang('main.popular_times')</h2>
@@ -276,6 +276,7 @@
     <hr>
    <canvas id = "myChart1" width="400" height="100"></canvas>
    <hr>
+	-->
 
    <section id="gallery">
    	<div>
@@ -324,7 +325,7 @@
    		</article>
    	</div>
    </section>
-   <section id="t1">
+   <!--<section id="t1">
       <div>
         <h2 class="title-text">@lang('main.review_summary')</h2>
       </div>
@@ -341,7 +342,7 @@
    <hr>
    <canvas id="myChart2" width="400" height="150"></canvas>
    <hr>
-
+	-->
    <footer class="footer">
 
         <div class="section-center">
@@ -353,7 +354,7 @@
 
        </footer>
 
-  <script type="text/javascript">
+ <!-- <script type="text/javascript">
      var ctx = document.getElementById("myChart");
 
      var myChart = new Chart(ctx,{
@@ -436,6 +437,7 @@
           }
      });
    </script>
+	-->
    <script src="{{ asset('js/onClickMenu.js') }}"></script>
 </body>
 </html> 
