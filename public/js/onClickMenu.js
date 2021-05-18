@@ -1,4 +1,23 @@
+var tl = new TimelineMax({onUpdate:updatePercentage});
+const controller = new ScrollMagic.Controller();
 
+tl.from(".menu-image",.5,{x:200,opacity: 0});
+tl.from(".menu-text-center",1,{width:0},"=-.7");
+
+
+const scene = new ScrollMagic.Scene({
+    triggerElement: ".menu",
+    triggerHook: "onLeave",
+    duration: "70%"
+})
+    .setPin(".menu")
+    .setTween(tl)
+    .addTo(controller);
+
+function updatePercentage(){
+    tl.progress();
+    console.log(tl.progress());
+}
 function onClickMenu() {
 	document.getElementById('menu-bar').classList.toggle('change');
 	document.getElementById('nav').classList.toggle('change-btn');
