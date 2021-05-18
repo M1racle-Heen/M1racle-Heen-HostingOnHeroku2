@@ -97,7 +97,9 @@ body{
 	url('image3.jpg') center/cover no-repeat fixed;
 	margin-top: auto;
 	background-color: black;
+		/*
 	background-size: 60% 80%;
+	*/
 }
 
 .hero{
