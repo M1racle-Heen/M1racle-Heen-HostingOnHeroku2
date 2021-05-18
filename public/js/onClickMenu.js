@@ -1,25 +1,3 @@
-var tl = new TimelineMax({onUpdate:updatePercentage});
-const controller = new ScrollMagic.Controller();
-tl.from(".menu",.5,{x:200,opacity:0});
-
-const scene = new ScrollMagic.Scene({
-	triggerElement:".menu",
-	triggerHook:"onLeave",
-	duration: "100%"
-})
-	.setPin(".menu")
-	.setTween(tl)
-	.addTo(controller);
-function updatePercentage(){
-	tl.progress();
-	console.log(tl.progress());
-}
-
-
-
-
-
-
 
 function onClickMenu() {
 	document.getElementById('menu-bar').classList.toggle('change');
