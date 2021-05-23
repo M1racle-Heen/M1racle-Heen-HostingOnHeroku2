@@ -1,56 +1,54 @@
-# ОБЩЕЕ ОПИСАНИЕ ПРОЕКТА
+# GENERAL DESCRIPTION OF THE PROJECT
 
-В данном проекте реализована адресная книжка.
-Все введенные пользователем данные сохраняются в БД и выводятся в блоке "MY ADDRESSES".
-Адреса упорядочены по алфавиту.
+Created Single Page Restaurant Web Application.Based on PHP Laravel.
+In this application anyone can see various types of dishes, ratings of dishes and prices for them, as well as register and book a table and select a date and time, and can also provide a coupon.
 
-# КЛЮЧЕВЫЕ ФАЙЛЫ ПРОЕКТА
+# KEY PROJECT FILES
 
-Маршрутизация реализована в файле: routes\web.php
+Routing is implemented in the file: routes \ web.php
 
-Разработанные контроллеры находятся в папке: app\Http\Controllers
-(IndexController, UserAddressController)
+The developed controllers are located in the folder: app \ Http \ Controllers
 
-Правила валидации запросов указаны в классе:App\Http\Requests\UserAddressCreateRequest
 
-Файлы миграции находятся в директории: database\migrations
+Request validation rules are specified in the class: App \ Http \ Requests 
 
-Файлы шаблонов: resources\views\site
+The migration files are located in the directory: database \ migrations
 
-Класс модели: app\UserAddress.php
+Template files: resources \ views \ site
 
-Файлы ресурсов находятся в директории: public\
+Model class: app \ UserAddress.php
 
-# ИНСТАЛЯЦИЯ
+Resource files are located in the directory: public \
+# INSTALLATION
 
-Склонируйте проект в директорию с сервером:
+Clone the project to the server directory:
 
-`git clone https://github.com/pkrotkikh/laravel-project-example.git`
+`git clone https: // github.com / pkrotkikh / laravel-project-example.git`
 
-Затем, открыв из папки проекта консоль, введите команду для установки пакетов ларавель:
+Then, opening the console from the project folder, enter the command to install the laravel packages:
 
 `composer install`
 
-Создайте базу данных на сервере и заполните поля файла .env, находящийся в папке проекта по примеру:
+Create a database on the server and fill in the fields of the .env file located in the project folder as follows:
 
-`DB_CONNECTION=mysql`
+`DB_CONNECTION = mysql`
 
-`DB_HOST=127.0.0.1`
+`DB_HOST = 127.0.0.1`
 
-`DB_PORT=3306`
+`DB_PORT = 3306`
 
-`DB_DATABASE=backendTest`
+`DB_DATABASE = larticles`
 
-`DB_USERNAME=root`
+`DB_USERNAME = root`
 
-`DB_PASSWORD=null`
+`DB_PASSWORD = null`
 
-В открытой консоли директории проекта введите команду для генерации таблиц базы данных:
+In the open console of the project directory, enter the command to generate the database tables:
 
 `php artisan migrate`
 
-В той же консоли для запуска сайта по адресу `http://localhost:8000` введите команду:
+In the same console, to launch the site at `http: // localhost: 8000`, enter the command:
 
 `php artisan serve`
 
-Откройте сайт в браузере по адресу  `http://localhost:8000`
+Open the site in a browser at `http://hostingonherokuyes.herokuapp.com/`
