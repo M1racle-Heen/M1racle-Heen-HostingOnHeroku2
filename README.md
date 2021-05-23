@@ -4,7 +4,7 @@
 Created Single Page Restaurant Web Application.Based on PHP Laravel.
 In this application anyone can see various types of dishes, ratings of dishes and prices for them, as well as register and book a table and select a date and time, and can also provide a coupon.
 
-Also i uploaded website on interted check it [here](https://projectonheroku.herokuapp.com/hello.html).
+Also i uploaded website on internet check it [here](http://hostingonherokuyes.herokuapp.com/).
 
 # KEY PROJECT FILES
 
