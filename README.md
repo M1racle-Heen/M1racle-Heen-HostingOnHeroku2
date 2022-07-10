@@ -1,4 +1,4 @@
-# M1racle-Heen-HostingOnHeroku2
+# Restaurant
 # GENERAL DESCRIPTION OF THE PROJECT
 
 Created Single Page Restaurant Web Application.Based on PHP Laravel.
